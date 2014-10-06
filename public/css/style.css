@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|PT+Mono|PT+Serif&subset=latin,cyrillic);
-@import url(sticky-footer.css);
+
 
 /* font-family: 'PT Sans', sans-serif, Arial;
 font-family: 'PT Mono', Arial;
@@ -44,9 +44,6 @@ font-family: 'PT Mono', sans-serif, Arial;
   color: black;
 
 }
-
-
-
 
 h2, .h2 {
 	/*font-size: 46px;*/
