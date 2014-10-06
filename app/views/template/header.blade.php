@@ -8,8 +8,10 @@
 	<title>Freewords.ru — стандарт транслитерации!</title>
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+
+	{{ HTML::style('css/bootstrap.css'); }}
+	{{ HTML::style('css/style.css'); }}
+
 	<link rel="shortcut icon" href="favicon.png">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,6 +23,35 @@
 	</head>
 	<body>
 	<div class="container">
-	<header>
-			<a href="/"><img src="img/logo.gif" alt="Freewords.ru"></a>
-	</header>
+			<a href="/" class="navbar-brend pull-left"> 
+			{{ HTML::image('img/logo.gif', 'freewords.ru — сервис транслитерации', ['class'=>'logo'] ); }}		
+			<!-- код выше Добавляет <img src="mg/logo.gif" alt="freewords.ru — сервис транслитерации" class="logo"> -->
+			</a>
+			<!-- Типа для мобильных девайсов, меню складывается в кнопочку -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<p>Меню</p>
+				</button>
+			</div>
+			<!-- Главное меню -->
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Транслитерация
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>{{ HTML::link('translate/name', 'Имени'); }}</li>
+							<li><a href="translate/date">Даты</a></li>
+							<li><a href="translate/number">Чисел</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Словари</a></li>
+					<li><a href="#">Информация</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /container -->
+	</div>
