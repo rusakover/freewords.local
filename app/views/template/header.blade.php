@@ -45,18 +45,40 @@
 						<ul class="dropdown-menu" role="menu">
 							<li>{{ HTML::link('translate/name', 'Имени'); }}</li>
 							<li>{{ HTML::link('translate/date', 'Даты'); }}</li>
-							<li><a href="translate/number">Чисел</a></li>
+							<li>{{ HTML::link('translate/number', 'Чисел'); }}</li>
 						</ul>
 					</li>
 					<li><a href="#">Словари</a></li>
 					<li><a href="#">Информация</a></li>
 				</ul>
 			</div>
-		</div>
-		<!-- /container -->
+	</div><!-- /container -->
+		
 	<div class="container">
-		<ul class="nav nav-tabs">
-			<li class="active"><a href="#">Имена</a></li>
-			<li><a href="dates.html"><span class="link">Дата прописью</span></a></li>
-		</ul>
+
+@if (isset($active)) @include('template.submenu')
+@endif
+    	 
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

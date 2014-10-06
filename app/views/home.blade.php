@@ -1,16 +1,11 @@
 @extends('template.template')
 
 @section('content')
-
-<ul class="nav nav-tabs">
-			<li class="active"><a href="#">Имена<span class="caret"></span></a></li>
-			<li><a href="#">Месяцы</a></li>
-			<li><a href="#">Что-то еще</a></li>
-		</ul>
+<div class="container">
 
 		<!-- Заголовок страницы -->
 			<div class="page-header">
-				<h2 class="lettering">Транслитерация</h2>
+				<h2 class="lettering">Главная страница</h2>
 				<p class="lead">Для транслитерации заполните одно из полей ниже и нажмите кнопку!</p>
 
 			</div>
@@ -80,6 +75,6 @@
 						
 						</div>
 					</div><!-- /.row -->
-
+</div><!-- /.container -->
 
 @stop
