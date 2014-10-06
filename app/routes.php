@@ -20,8 +20,7 @@
 Route::get('/', 'HomeController@index');
 Route::get('translate', 'ServiceController@index');
 Route::get('translate/name', 'translateController@name');
-// Route::get('translate/date', 'translateController@date');
+Route::get('translate/date', 'translateController@date');
 
-Route::get('translate/date', array('as' => 'date',
-                                 'uses' => 'translateController@date'));
+
 
