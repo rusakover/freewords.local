@@ -19,4 +19,5 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('translate', 'ServiceController@index');
-Route::get('translate/name', 'translateController@name');
+Route::get('translate/name', 'translateController@translateName');
+Route::get('translate/date', 'translateController@translateDate');

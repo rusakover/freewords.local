@@ -1,4 +1,8 @@
-	</div><!-- /.container -->
+<div id="footer">
+	<div class="container">
+		<p class="text-muted">2005-2014 © Freewords.ru</p>
+	</div>
+</div>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	{{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'); }}

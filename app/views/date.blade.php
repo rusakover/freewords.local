@@ -2,12 +2,13 @@
 
 @section('content')
 
-	<div class="container">
+<div class="container">
+
 		<!-- Заголовок страницы -->
 		<div class="page-header">
 			<div class="row">
 				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-					<h2 class="lettering">транслитерация имени</h2>
+					<h2 class="lettering">дата прописью</h2>
 				<p class="lead">Для транслитерации заполните поля ниже</p>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -20,9 +21,17 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="form-group">
-					<h4 class="lettering">имя:</h4>
-				<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" data-toggle="tooltip" data-placement="top" title="Минимум 3 буквы" autofocus/ >
-				<span class="help-block">Введите имя, фамилию и отчество для транслитерации</span>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<h4 class="lettering">дата</h4>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<h4 class="small pull-right"><p class="a"><a id="now">Cегодня</a> <i class="fa fa-level-down"></i>
+</p></h4>
+						</div>
+					</div>
+				<input type="date" class="form-control input-lg" id="dateField" autofocus/ >
+				<span class="help-block">Введите дату в формате ДД.ММ.ГГГГ</span>
 			</div>
 			<div class="form-group">
 				<h4 class="lettering source">язык:</h4>
@@ -55,19 +64,16 @@
 				
 				<div class="zub">
 					<!--____________________ Блок Зубчики -->
-					<div class="primary russian">
-						<span class="help-block"><i>Российский стандарт:</i>
+					<div class="primary british">
+						<span class="help-block"><i>Международный английский:</i>
 						</span>
-						<p class="lead big" id="nameResult"></p>
+						<p class="lead big" id="dateResult"></p>
 					</div>
 					<div>
-						<span class="help-block"> <i>Европейский стандарт:</i>
+						<span class="help-block"> <i>Американский английский:</i>
 						</span>
 						<p class="lead" id="">IVANOV PEOTER</p>
-						<span class="help-block">
-							<i>Стандарт ISO3221-3:</i>
-						</span>
-						<p class="lead" id="nameResult">IVANOV PETR</p>
+						
 					</div>
 				</div>
 				<!-- /зубчкики -->
@@ -94,6 +100,6 @@
 
 		</div>
 	</div> --> <!-- /.row -->
-	</div><!-- /.container -->
+</div><!-- /.container -->
 
 @stop

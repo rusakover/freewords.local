@@ -11,9 +11,15 @@ class TranslateController extends BaseController {
 	}
 
 
-	public function name()
+	public function translateName()
 	{
 		return View::make('name');
+	}
+
+
+	public function translateDate() 
+	{
+		return View::make('date');
 	}
 
 }
