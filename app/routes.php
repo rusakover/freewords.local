@@ -17,10 +17,23 @@
 // });
 
 
-Route::get('/', 'HomeController@index');
-Route::get('translate', 'ServiceController@index');
-Route::get('translate/name', 'translateController@name');
-Route::get('translate/date', 'translateController@date');
+// Route::get('/', 'HomeController@index');
 
+Route::any('/', array(
+	'as' => 'home',
+	'uses' => 'HomeController@index'
+	));
 
+// Route::get('translate', 'translateController@index');
+// Route::get('translate/{category?}', 'translateController@getPage');
+// Route::get('translate/date', 'translateController@date');
+
+// Route::controller('/translate/{category?}', 'translateController');
+
+Route::resource('/translate', 'translateController');
+
+// Route::get('user/{name?}', function($name = 'John')
+// {
+//     return $name;
+// });
 

@@ -54,12 +54,7 @@
 			</div>
 	</div><!-- /container -->
 		
-	<div class="container">
 
-@if (isset($active)) @include('template.submenu')
-@endif
-    	 
-	</div>
 
 
 

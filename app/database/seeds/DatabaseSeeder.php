@@ -11,7 +11,8 @@ class DatabaseSeeder extends Seeder {
 	{
 		
 
-		// $this->call('PagesSeeder');
+		$this->call('PagesSeeder');
+		$this->command->info("Таблица типа заполнена!");
 	}
 
 }

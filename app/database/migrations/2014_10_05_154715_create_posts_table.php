@@ -12,16 +12,16 @@ class CreatePostsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('posts', function($table)
-		{
-			$table->increments('id');
-			$table->string('title',150);
-			$table->text('body');
-			$table->string('preview',300);
-			$table->string('author',100);
-			$table->timestamps();
+		// Schema::create('posts', function($table)
+		// {
+		// 	$table->increments('id');
+		// 	$table->string('title',150);
+		// 	$table->text('body');
+		// 	$table->string('preview',300);
+		// 	$table->string('author',100);
+		// 	$table->timestamps();
 
-		});
+		// });
 	}
 
 	/**
@@ -31,7 +31,7 @@ class CreatePostsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('posts');
+		// Schema::drop('posts');
 	}
 
 }

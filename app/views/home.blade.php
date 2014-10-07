@@ -6,6 +6,7 @@
 		<!-- Заголовок страницы -->
 			<div class="page-header">
 				<h2 class="lettering">Главная страница</h2>
+				
 				<p class="lead">Для транслитерации заполните одно из полей ниже и нажмите кнопку!</p>
 
 			</div>
@@ -45,7 +46,7 @@
 									</label>
 
 								</div>
-								<span class="help-block">Ввыберите язык, на который транслитирировать</span>
+								<span class="help-block">Выберите язык, на который транслитирировать</span>
 
 						</div><!-- /.col-lg-6 -->
 						<div class="col-lg-4 col-md-4">

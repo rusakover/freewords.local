@@ -15,11 +15,15 @@ class CreatePagesTable extends Migration {
 		Schema::create('pages', function($table)
 		{
 			$table->increments('id');
+			$table->string('category', 50);
+			$table->string('url', 250);			
 			$table->string('title', 150);
 			$table->text('body');
+			$table->text('info');
+			$table->string('seo_content', 250);
+			$table->string('seo_title', 150);
+			$table->string('seo_keywords', 200);
 			$table->timestamps();
-
-
 
 		}
 		);
