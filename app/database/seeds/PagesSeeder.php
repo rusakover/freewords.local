@@ -20,13 +20,25 @@ class PagesSeeder extends Seeder {
 // 			$table->string('seo_title', 150);
 // 			$table->string('seo_keywords', 200);
 // 			$table->timestamps();
+
+
 		DB::table('pages')->insert(array(
 		// Page::create(array(
-			array('title'=>'title1','body'=>'body1','info'=>'PHP Ninga'),
-			array('title'=>'title2','body'=>'body2','info'=>'JS Ninga'),
-			array('title'=>'title3','body'=>'body3','info'=>'Jquery Ninga'),
-			array('title'=>'title4','body'=>'body4','info'=>'Not Ninga'),
-			array('title'=>'title5','body'=>'body5','info'=>'HTML Ninga')
+			array(
+				'title'=>'Транслитерация имен',
+				'category'=>'name',
+				'body'=>'body1',
+				'discription' => 'Для транслитерации заполните поля ниже', 
+				'info'=>'PHP Ninga'),
+
+			array(
+				'title'=>'Дата прописью',
+				'category'=>'date',
+				'body'=>'body2',
+				'discription' => 'Для даты пропиьсю заполните поля ниже', 
+				'info'=>'JS Ninga')
+
+
 		));
 	}
 }

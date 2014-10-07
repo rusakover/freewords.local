@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<h2 class="lettering">{{$page->title}}</h2>
-				<p class="lead">Для транслитерации заполните поля ниже</p>
+				<p class="lead">{{$page->discription}}</p>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 					<h3><a href="#"><i class="fa fa-heart-o"></i></a></h3>
@@ -17,6 +17,11 @@
 			</div>
 			
 		</div>
+
+</div>	
+
+<div class="container">
+
 		<!-- Форма -->
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
@@ -30,7 +35,7 @@
 </p></h4>
 						</div>
 					</div>
-				<input type="date" class="form-control input-lg" id="dateField" autofocus/ >
+				<input type="date" class="form-control input-lg" id="dateField" autofocus/ value="<?php echo date('Y-m-d'); ?>">
 				<span class="help-block">Введите дату в формате ДД.ММ.ГГГГ</span>
 			</div>
 			<div class="form-group">

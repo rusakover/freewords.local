@@ -18,6 +18,7 @@ class CreatePagesTable extends Migration {
 			$table->string('category', 50);
 			$table->string('url', 250);			
 			$table->string('title', 150);
+			$table->string('discription', 250);
 			$table->text('body');
 			$table->text('info');
 			$table->string('seo_content', 250);

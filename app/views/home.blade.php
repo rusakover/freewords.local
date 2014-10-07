@@ -10,7 +10,8 @@
 				<p class="lead">Для транслитерации заполните одно из полей ниже и нажмите кнопку!</p>
 
 			</div>
-			
+</div>	
+<div class="container">
 			<!-- Форма -->
 				<div class="row">
 						<div class="col-lg-4 col-md-4">
