@@ -28,14 +28,14 @@ class PagesSeeder extends Seeder {
 				'title'=>'Транслитерация имен',
 				'category'=>'name',
 				'body'=>'body1',
-				'discription' => 'Для транслитерации заполните поля ниже', 
+				'discription' => 'Для транслитерации имени заполните поля ниже', 
 				'info'=>'PHP Ninga'),
 
 			array(
 				'title'=>'Дата прописью',
 				'category'=>'date',
 				'body'=>'body2',
-				'discription' => 'Для даты пропиьсю заполните поля ниже', 
+				'discription' => 'Для получения даты прописью заполните поля ниже', 
 				'info'=>'JS Ninga')
 
 

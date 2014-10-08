@@ -69,7 +69,7 @@
 				
 				<div class="zub">
 					<!--____________________ Блок Зубчики -->
-					<div class="primary british">
+					<div class="primary">
 						<span class="help-block"><i>Международный английский:</i>
 						</span>
 						<p class="lead big" id="dateResult"></p>
@@ -96,7 +96,7 @@
 	<!--row-->
 
 	<!-- Кнопка -->
-	<!-- <div class="row">
+	<div class="row">
 		<div class="col-lg-4 col-md-6">
 			<div class="form-actions">
 				<input id="send" type="submit" class="butn" value="Транслит"></div>
@@ -104,7 +104,7 @@
 			<hr/>
 
 		</div>
-	</div> --> <!-- /.row -->
+	</div> <!-- /.row -->
 </div><!-- /.container -->
 
 @stop
