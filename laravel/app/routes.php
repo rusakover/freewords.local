@@ -30,7 +30,7 @@ Route::any('/', array(
 
 // Route::controller('/translate/{category?}', 'translateController');
 
-Route::resource('/translate', 'translateController');
+Route::resource('/translate', 'TranslateController');
 
 // Route::get('user/{name?}', function($name = 'John')
 // {
