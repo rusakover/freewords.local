@@ -11,6 +11,7 @@
 
 	{{ HTML::style('css/bootstrap.css'); }}
 	{{ HTML::style('css/style.css'); }}
+	{{ HTML::style('css/font-awesome.css'); }}
 
 	<link rel="shortcut icon" href="favicon.png">
 
