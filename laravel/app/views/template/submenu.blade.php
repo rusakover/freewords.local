@@ -10,6 +10,9 @@
 			<li class=" {{ ($page->category) == 'date' ? 'active' : '' }} " >
 				{{ HTML::link('translate/date', 'Даты'); }}
 			</li>
+			<li class=" {{ ($page->category) == 'summ' ? 'active' : '' }} " >
+				{{ HTML::link('translate/summ', 'Сумма'); }}
+			</li>
 	</ul>
 </div>
 

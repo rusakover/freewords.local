@@ -24,19 +24,14 @@ class PagesSeeder extends Seeder {
 
 		DB::table('pages')->insert(array(
 		// Page::create(array(
+			
+			
 			array(
-				'title'=>'Транслитерация имен',
-				'category'=>'name',
-				'body'=>'body1',
-				'discription' => 'Для транслитерации имени заполните поля ниже', 
-				'info'=>'PHP Ninga'),
-
-			array(
-				'title'=>'Дата прописью',
-				'category'=>'date',
-				'body'=>'body2',
-				'discription' => 'Для получения даты прописью заполните поля ниже', 
-				'info'=>'JS Ninga')
+				'title'=>'Сумма прописью',
+				'category'=>'summ',
+				'body'=>'body3',
+				'discription' => 'Для получения суммы прописью заполните поле ниже' ,
+				'info'=>'PHP'),
 
 
 		));

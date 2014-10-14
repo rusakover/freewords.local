@@ -46,7 +46,7 @@
 						<ul class="dropdown-menu" role="menu">
 							<li>{{ HTML::link('translate/name', 'Имени'); }}</li>
 							<li>{{ HTML::link('translate/date', 'Даты'); }}</li>
-							<li>{{ HTML::link('translate/number', 'Чисел'); }}</li>
+							<li>{{ HTML::link('translate/summ', 'Чисел'); }}</li>
 						</ul>
 					</li>
 					<li><a href="#">Словари</a></li>
