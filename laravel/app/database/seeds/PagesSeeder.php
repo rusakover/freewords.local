@@ -20,7 +20,7 @@ class PagesSeeder extends Seeder {
 // 			$table->string('seo_title', 150);
 // 			$table->string('seo_keywords', 200);
 // 			$table->timestamps();
-
+		DB::table('pages')->truncate();
 
 		DB::table('pages')->insert(array(
 		// Page::create(array(
@@ -29,6 +29,13 @@ class PagesSeeder extends Seeder {
 				'category'=>'name',
 				'body'=>'body1',
 				'discription' => 'Для транслитерации имени заполните поля ниже', 
+				'info'=>'PHP Ninga'),
+
+			array(
+				'title'=>'Создание паролей',
+				'category'=>'password',
+				'body'=>'body1',
+				'discription' => 'Для создания пароля заполните поля ниже ', 
 				'info'=>'PHP Ninga'),
 
 			array(
