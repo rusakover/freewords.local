@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://freeword.local',
+	'url' => 'http://freewords.local',
 
 	/*
 	|--------------------------------------------------------------------------
