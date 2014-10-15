@@ -49,7 +49,7 @@
 							<li>{{ HTML::link('translate/number', 'Чисел'); }}</li>
 						</ul>
 					</li>
-					<li><a href="#">Словари</a></li>
+					<li>{{ HTML::link('pass', 'Пароли'); }}</li>
 					<li><a href="#">Информация</a></li>
 				</ul>
 			</div>

@@ -11,7 +11,8 @@ font-family: 'PT Serif', serif, Times New Roman; */
 
 body {
 font-family: 'PT Sans', sans-serif, Arial;
-/*background-color: #f8f8f8;*/
+background-color: rgba(226, 224, 211, 0.24);
+/*background-color: rgba(240, 241, 248, 0.24);*/
 }
 
 
@@ -81,12 +82,19 @@ font-size: 14px;
   border-top-color: #ffeebb;
 }
 
+.page-header {
+  border-bottom: none;
+}
+
 /* --------------------------------------  Иконки -------------------------------------- */
 .fa {color: #ccc;}
 
 a .fa:hover {color: rgba(21,56,212,1);
 cursor: pointer;}
 
+a:focus {
+  outline: none;
+}
 
 p >a, a span.link {
     color:rgba(21,56,212,1);
@@ -266,5 +274,18 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
 .russian {background: url(../img/herb.png) no-repeat;}
 .british {background: url(../img/british.png) no-repeat;}
 
+.whitebox {
+background: white;
+border-radius: 5px;
+padding: 30px 20px;
+border-bottom: 1px solid #DFDFDF;
+/* border-right: 1px solid #bbb; */
+/* border-top: 1px solid white; */
+/* box-shadow: 10px 10px 10px rgba(72, 58, 15, 0.1); */
+box-shadow: 7px 10px 15px rgba(19, 21, 58, 0), 0px 1px 3px rgba(36, 30, 12, 0.09), 1px 4px 5px rgba(36, 30, 12, 0.03);
+}
 
+.infobox {
+  padding: 30px 20px;
+}
 

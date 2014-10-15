@@ -27,13 +27,15 @@ class PagesSeeder extends Seeder {
 			array(
 				'title'=>'Транслитерация имен',
 				'category'=>'name',
+				'url'=>'translate/name',
 				'body'=>'body1',
 				'discription' => 'Для транслитерации имени заполните поля ниже', 
 				'info'=>'PHP Ninga'),
 
 			array(
 				'title'=>'Создание паролей',
-				'category'=>'password',
+				'category'=>'pass',
+				'url'=>'pass',
 				'body'=>'body1',
 				'discription' => 'Для создания пароля заполните поля ниже ', 
 				'info'=>'PHP Ninga'),
@@ -41,6 +43,7 @@ class PagesSeeder extends Seeder {
 			array(
 				'title'=>'Дата прописью',
 				'category'=>'date',
+				'url'=>'translate/date',
 				'body'=>'body2',
 				'discription' => 'Для получения даты прописью заполните поля ниже', 
 				'info'=>'JS Ninga')

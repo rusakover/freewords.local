@@ -4,6 +4,7 @@ class PassController extends BaseController {
 
 	public function index() {
 
+		// return View::make('pass');
 		$category = 'pass';
 		$page = Page::getCategory($category);
 
