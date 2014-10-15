@@ -419,7 +419,7 @@ num=text;
   o[n]=o[n].join(' ');k++
  }
 	
-	result= o.reverse().join(" ")
+	result= o.reverse().join(" ");
 	
 	document.getElementById('nameResult').innerHTML=result;
 	document.getElementById('hiddenBlock').style.display='';
