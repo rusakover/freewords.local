@@ -1,7 +1,9 @@
-document.getElementById('hiddenBlock').style.display='none'; // скрываем блок Результата
+// document.getElementById('hiddenBlock').style.display='none'; // скрываем блок Результата
+document.getElementById('hiddenBlock').style.visibility='hidden'; // скрываем блок Результата
 $('#nameField').keyup(checkFieldName); // вместо вставки событий в HTML можно здесь их вставлять. В скобках функция для запуска 
 //keyup — это событие которое появлется при отпускнии клавиши. Подробнее в гугле "события jquery"
 $('#dateField').blur(datePropisRU);
+$('#like').popover('hide');
 
 $('#now').click(currentDate); // При клике на Сегодня запускает функцию подстановки даты  поле
 
@@ -9,12 +11,12 @@ function checkFieldName() {
     var val = $('#nameField').val(); //это типа document.getElementById но на jQuery (надстройка над javascript)
         if (val.length > 2) {
             translateEN();
-            document.getElementById('hiddenBlock').style.display='';
+            document.getElementById('hiddenBlock').style.visibility='visible';
             $('#nameField').tooltip('destroy'); //всплывающая подсказка о 3 буквах
         }
         else if (val.length <= 2) {
             // document.getElementById('send').disabled = 1;
-            document.getElementById('hiddenBlock').style.display='none';
+            document.getElementById('hiddenBlock').style.visibility='hidden';
             $('#nameField').tooltip('show'); //всплывающая подсказка о 3 буквах
             }
 };
@@ -133,7 +135,7 @@ var year=new Array();
  resultDate=Daystr+Mountstr + strYear;
  if (resultDate!='') {
                 document.getElementById('dateResult').innerHTML=resultDate;
-                document.getElementById('hiddenBlock').style.display='';}
+                document.getElementById('hiddenBlock').style.visibility='visible';}
 var kk=1;
  }
 
@@ -243,7 +245,7 @@ function translateEN(){
             	result=result.toUpperCase(); // преобразование строки во все буквы прописные
 
                 document.getElementById('nameResult').innerHTML=result;
-                document.getElementById('hiddenBlock').style.display='';
+                document.getElementById('hiddenBlock').style.visibility='visible';
             
 			
 
@@ -355,7 +357,7 @@ function translateDE(){
             	result=result.toUpperCase(); // преобразование строки во все буквы прописные
             
                 document.getElementById('nameResult').innerHTML=result;
-                document.getElementById('hiddenBlock').style.display='';
+                document.getElementById('hiddenBlock').style.visibility='visible';
             
 			
 };

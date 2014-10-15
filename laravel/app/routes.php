@@ -30,7 +30,18 @@ Route::any('/', array(
 
 // Route::controller('/translate/{category?}', 'translateController');
 
-Route::resource('/translate', 'TranslateController'); 
+Route::resource('/translate', 'TranslateController');
+Route::resource('/pass', 'PassController');
+
+// Route::get('/pass', function()
+// {
+//     $html = '<html><body>'
+//             . '<p>А это PDF между прочим!!! '
+//             . 'ТЫ ЭТО ПОЙМИ.</p>'
+//             . '</body></html>';
+//     return PDF::load($html, 'A4', 'portrait')->show();
+// });
+
 
 // Route::get('user/{name?}', function($name = 'John')
 // {

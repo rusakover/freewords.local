@@ -24,7 +24,7 @@
 
 		<!-- Форма -->
 		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12 whitebox">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -52,10 +52,10 @@
 			</div>
 		</div>
 		<!-- /.col-lg-6 -->
-		<div class="col-lg-4 col-md-4 col-sm-6">
+		<div class="col-lg-4 col-md-4 col-sm-6 whitebox" id="hiddenBlock">
 
 			<!-- СКРЫТЫЙ РАЗДЕЛ, появляется при Результате -->
-			<div class="form-group" id="hiddenBlock">
+			<div class="form-group" >
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<h4 class="lettering result">Результат:</h4>	
@@ -88,7 +88,7 @@
 			</div>
 			<!--  -->
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-6"><h4 class="lettering">Помощь</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi <a href="#">provident</a> eius aspernatur perferendis et, consequuntur quidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
+		<div class="col-lg-4 col-md-4 col-sm-6 infobox"><h4 class="lettering">Помощь</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi <a href="#">provident</a> eius aspernatur perferendis et, consequuntur quidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
 		<h5 class="lettering">Lorem ipsum dolor sit.</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi provident euidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
 		<h5 class="lettering">Lorem dolor sit</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendimi excepturi dolor quo alias necessitatibus.</p>
 		</div>
