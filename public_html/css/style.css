@@ -110,21 +110,16 @@ p > a:hover, a span.link:hover {
 a {cursor: pointer;}
 
 /* -------------------------------------- Навигация ------------------------------------ */
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-toggle .navbar-nav > .open > a, 
-.navbar-toggle .navbar-nav > .open > a:hover, 
-.navbar-toggle .navbar-nav > .open > a:focus {
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
 color: #FFF;
 background-color: rgba(21,56,212,1);
 border-radius: 3px 3px 0 0;
 }
 
-.navbar-default .navbar-nav > li > a:hover, 
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-toggle .navbar-nav > li > a:hover, 
-.navbar-toggle .navbar-nav > li > a:focus
+.nav > li > a:hover, 
+.nav > li > a:focus,
+.nav > li > a.active
 {
 color: #333;
 background-color: #ffeebb;
