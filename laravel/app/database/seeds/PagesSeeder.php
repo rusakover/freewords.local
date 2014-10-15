@@ -27,16 +27,17 @@ class PagesSeeder extends Seeder {
 			
 			
 			array(
-<<<<<<< HEAD
 				'title'=>'Сумма прописью',
 				'category'=>'summ',
+				'menu_id'=>'4',
 				'body'=>'body3',
 				'discription' => 'Для получения суммы прописью заполните поле ниже' ,
 				'info'=>'PHP'),
-=======
+			
+			array(
 				'title'=>'Транслитерация имен',
 				'category'=>'name',
-				'url'=>'translate/name',
+				'menu_id'=>'4',
 				'body'=>'body1',
 				'discription' => 'Для транслитерации имени заполните поля ниже', 
 				'info'=>'PHP Ninga'),
@@ -44,7 +45,7 @@ class PagesSeeder extends Seeder {
 			array(
 				'title'=>'Создание паролей',
 				'category'=>'pass',
-				'url'=>'pass',
+				'menu_id'=>'4',
 				'body'=>'body1',
 				'discription' => 'Для создания пароля заполните поля ниже ', 
 				'info'=>'PHP Ninga'),
@@ -52,11 +53,10 @@ class PagesSeeder extends Seeder {
 			array(
 				'title'=>'Дата прописью',
 				'category'=>'date',
-				'url'=>'translate/date',
+				'menu_id'=>'4',
 				'body'=>'body2',
 				'discription' => 'Для получения даты прописью заполните поля ниже', 
 				'info'=>'JS Ninga')
->>>>>>> alexey
 
 
 		));

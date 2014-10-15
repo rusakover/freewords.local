@@ -15,8 +15,8 @@ class CreatePagesTable extends Migration {
 		Schema::create('pages', function($table)
 		{
 			$table->increments('id');
-			$table->string('category', 50);
-			$table->string('url', 250);			
+			$table->string('menu_id', 50);		
+			$table->string('category', 50);		
 			$table->string('title', 150);
 			$table->string('discription', 250);
 			$table->text('body');
@@ -27,6 +27,7 @@ class CreatePagesTable extends Migration {
 			$table->timestamps();
 
 		}
+		
 		);
 	}
 
