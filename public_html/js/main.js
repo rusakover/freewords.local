@@ -4,7 +4,7 @@ $('#nameField').keyup(checkFieldName); // вместо вставки событ
 //keyup — это событие которое появлется при отпускнии клавиши. Подробнее в гугле "события jquery"
 $('#dateField').blur(datePropisRU);
 $('#summField').blur(summPropisRU);
-$('#like').popover('hide');
+//$('#like').popover('hide');
 
 $('#now').click(currentDate); // При клике на Сегодня запускает функцию подстановки даты  поле
 
@@ -32,39 +32,39 @@ function currentDate() { // Вычисляет текущую дату для da
 }
 
 function datePropisRU(){
- var text=document.getElementById('dateField').value;
- var resultDate;
- var userMounth;var userDay;var Daystr;var Mountstr;
- 
-var day=new Array(); // массив чисел месяца
-		day[1] = 'Первого'; day[2] = 'Второго'; day[3] = 'Третьего';
-		day[4] = 'Четвертого'; 	day[5] = 'Пятого'; 	day[6] = 'Шестого';
-		day[7] = 'Седьмого'; 	day[8] = 'Восьмого'; 	day[9] = 'Девятого';
-		day[10] = 'Десятого'; 	day[11] = 'Одиннадцатого'; 	day[12] = 'Двенадцатого';
-		day[13] = 'Тринадцатого'; 	day[14] = 'Четырнадцатого'; day[15] = 'Пятнадцатого';
-		day[16] = 'Шестнадцатого'; 	day[17] = 'Семнадцатого'; 	day[18] = 'Восемнадцатого';
-		day[19] = 'Девятнадцатого'; day[20] = 'Двадцатого'; day[21] = 'Двадцать первого';
-		day[22] = 'Двадцать второго'; day[23] = 'Двадцать третьего'; day[24] = 'Двадцать четвертого';
-		day[25] = 'Двадцать пятого'; day[26] = 'Двадцать шестого'; 	day[27] = 'Двадцать седьмого';
-		day[28] = 'Двадцать восьмого'; 	day[29] = 'Двадцать девятого'; 	day[30] = 'Тридцатого';
-		day[31] = 'Тридцать первого'; 
+var text=document.getElementById('dateField').value;
+if (test!="") { // если дата верная, то продолжение выполнения, иначе ничего не происходит
+	var resultDate;
+	var userMounth;var userDay;var Daystr;var Mountstr;
+	var day=new Array(); // массив чисел месяца
+			day[1] = 'Первого'; day[2] = 'Второго'; day[3] = 'Третьего';
+			day[4] = 'Четвертого'; 	day[5] = 'Пятого'; 	day[6] = 'Шестого';
+			day[7] = 'Седьмого'; 	day[8] = 'Восьмого'; 	day[9] = 'Девятого';
+			day[10] = 'Десятого'; 	day[11] = 'Одиннадцатого'; 	day[12] = 'Двенадцатого';
+			day[13] = 'Тринадцатого'; 	day[14] = 'Четырнадцатого'; day[15] = 'Пятнадцатого';
+			day[16] = 'Шестнадцатого'; 	day[17] = 'Семнадцатого'; 	day[18] = 'Восемнадцатого';
+			day[19] = 'Девятнадцатого'; day[20] = 'Двадцатого'; day[21] = 'Двадцать первого';
+			day[22] = 'Двадцать второго'; day[23] = 'Двадцать третьего'; day[24] = 'Двадцать четвертого';
+			day[25] = 'Двадцать пятого'; day[26] = 'Двадцать шестого'; 	day[27] = 'Двадцать седьмого';
+			day[28] = 'Двадцать восьмого'; 	day[29] = 'Двадцать девятого'; 	day[30] = 'Тридцатого';
+			day[31] = 'Тридцать первого'; 
 
-var year=new Array();
-	year[1]='одна тысяча'; year[2]='две тысячи'; year[3]='три тысячи';year[0]='' //- тысячелетия
-	year[11] = 'сто'; 	year[12] = 'двести';	year[13] = 'триста';	year[14] = 'четыреста';	year[15] = 'пятьсот';	year[16] = 'шестьсот';	year[17] = 'семьсот'; 	year[18] = 'восемьсот';
-	year[19] = 'девятьсот'; // - столетия
-	
-	year[21]= 'десятого';year[22]= 'двадцатого';year[23]= 'тридцатого';year[24]= 'сорокового';year[25]= 'пятьдесятого';year[26]= 'шестьдесятого';year[27]= 'семидесятого';year[28]= 'восьмидесятого';year[29]= 'девяностого';
-	
-	year[33]= 'тридцать';year[34]= 'сорок';year[35]= 'пятьдесят';year[36]= 'шестьдесят';year[37]= 'семьдесят';year[38]= 'восемьдесят';year[39]= 'девяносто';
-	
-	year[41]= 'сотого';year[42]= 'двухсотого';year[43]= 'трехсотого';year[44]= 'четырехсотого';year[45]= 'пятисотого';year[46]= 'шестисотого';year[47]= 'семисотого';year[48]= 'восьмисотого'; year[47]= 'девятисотого';
-	
+	var year=new Array();
+		year[1]='одна тысяча'; year[2]='две тысячи'; year[3]='три тысячи';year[0]='' //- тысячелетия
+		year[11] = 'сто'; 	year[12] = 'двести';	year[13] = 'триста';	year[14] = 'четыреста';	year[15] = 'пятьсот';	year[16] = 'шестьсот';	year[17] = 'семьсот'; 	year[18] = 'восемьсот';
+		year[19] = 'девятьсот'; // - столетия
+		
+		year[21]= 'десятого';year[22]= 'двадцатого';year[23]= 'тридцатого';year[24]= 'сорокового';year[25]= 'пятьдесятого';year[26]= 'шестьдесятого';year[27]= 'семидесятого';year[28]= 'восьмидесятого';year[29]= 'девяностого';
+		
+		year[33]= 'тридцать';year[34]= 'сорок';year[35]= 'пятьдесят';year[36]= 'шестьдесят';year[37]= 'семьдесят';year[38]= 'восемьдесят';year[39]= 'девяносто';
+		
+		year[41]= 'сотого';year[42]= 'двухсотого';year[43]= 'трехсотого';year[44]= 'четырехсотого';year[45]= 'пятисотого';year[46]= 'шестисотого';year[47]= 'семисотого';year[48]= 'восьмисотого'; year[47]= 'девятисотого';
+		
 	resultDate=text;
 	userDay=resultDate.substr(8,2); // из строки даты извлекается день (формат представления 2011-11-01 где 01 - день (первое)
 	Daystr=day[parseInt(userDay)]; // значение из строки переводится с помощью функции parseInt в числовое значение, далее согласно массиву переменной Daystr присваивается строковое значение 
-		
-		userMounth=resultDate.slice(5,-3);// из строки даты извлекается день (формат представления 2011-11-01 где 11 - месяц
+	userMounth=resultDate.slice(5,-3);// из строки даты извлекается день (формат представления 2011-11-01 где 11 - месяц
+	
 	switch (userMounth) {
 		case '01': 	Mountstr = ' января';break;
 		case '02':	Mountstr = ' февраля';break;
@@ -80,66 +80,47 @@ var year=new Array();
 		case '12': 	Mountstr = ' декабря';break;}
 	// Выяснение введенного года - самое сложное :)
 	
-		var yTen='';
-		var yHund='';
-		var yYear='';
-		var YearStr='';
-		var strYear='';
-		YearStr=resultDate.substr(0,4);
-		
-		yTen=parseInt(YearStr.substr(2,2)); // переменной присваивается значение десятков 
-		var k='';
-		var l='';
-		if (yTen > 1 && yTen< 20) {  // если лиапозон десятков лежит в пределах 1-19 то используется просто массив дней
-			strYear=' '+day[yTen];
-			strYear+=' года'; }
-		else if (parseInt(YearStr.substr(3,1))==0) { // определяется равен ли год десятку - 10,20,30 и т.д - т.к. написание на русском различается
-			strYear=' ' + year[(parseInt(YearStr.substr(2,1))+20)]; // если да, то берется из массива year - диапозон от 21-20 значения. Определяется это путем считывания 3 цифры переменной года YearStr и прибавляется 20
-			strYear+=' года'; }
-		else {
-
-			// иначе берется каждая цифра из десятков года и находится в массиве их значение
-			strYear=' '+year[(parseInt(YearStr.substr(2,1))+30)]+' '+ day[(parseInt(YearStr.substr(3,1)))]
-			strYear+=' года';
+	var yTen='';
+	var yHund='';
+	var yYear='';
+	var YearStr='';
+	var strYear='';
+	YearStr=resultDate.substr(0,4);
+	
+	yTen=parseInt(YearStr.substr(2,2)); // переменной присваивается значение десятков 
+	var k='';
+	var l='';
+	if (yTen > 1 && yTen< 20) {  // если лиапозон десятков лежит в пределах 1-19 то используется просто массив дней
+		strYear=' '+day[yTen];
+		strYear+=' года'; }
+	else if (parseInt(YearStr.substr(3,1))==0) { // определяется равен ли год десятку - 10,20,30 и т.д - т.к. написание на русском различается
+		strYear=' ' + year[(parseInt(YearStr.substr(2,1))+20)]; // если да, то берется из массива year - диапозон от 21-20 значения. Определяется это путем считывания 3 цифры переменной года YearStr и прибавляется 20
+		strYear+=' года'; }
+	else {
+		// иначе берется каждая цифра из десятков года и находится в массиве их значение
+		strYear=' '+year[(parseInt(YearStr.substr(2,1))+30)]+' '+ day[(parseInt(YearStr.substr(3,1)))]
+		strYear+=' года';
 		}
-		var yearTek='';
-		var strYears='';
-		yaerTek= parseInt(YearStr.substr(0,2))
-		if (yearTek==20) strYears='Две тысячи';
-		if (yearTek==19) strYears='Одна тыяча девятьсот';
-
-
-
-
-
-//		else if (yTen > 19 && yTen<100) {
-			//k=parseInt(YearStr.substr(2,1)) + 20;
-			//strYear=' '+year[k];
-		//	l=parseInt(YearStr.substr(3,1));
-	//		if (l!=0) {
-//				strYear+=day[l];	
-				//strYear+=' года';
-			//}
-			//else strYear+=' года';
-		//}
-		
-		strYear=strYears+' '+strYear.toLowerCase();
-
-		var t=1;
-		
-		
-		
+	var yearTek='';
+	var strYears='';
+	yaerTek= parseInt(YearStr.substr(0,2));
+	switch (yaerTek) {
+		case 20: strYears=' две тысячи'; break;
+		case 19: strYears=' одна тыяча девятьсот'; break;
+	}	
 
 	
-	
-	
- resultDate=Daystr+Mountstr + strYear;
- if (resultDate!='') {
-                document.getElementById('dateResult').innerHTML=resultDate;
-                document.getElementById('hiddenBlock').style.visibility='visible';}
-var kk=1;
+	strYear=strYears+' '+strYear.toLowerCase();
+
+	var t=1;
+	resultDate=Daystr+Mountstr + strYear;
+	if (resultDate!='') {
+		document.getElementById('dateResult').innerHTML=resultDate;
+		document.getElementById('hiddenBlock').style.visibility='visible';
+		}
+	var kk=1;
  }
-
+}
 function translateEN(){
         
             var text=document.getElementById('nameField').value;
@@ -419,10 +400,11 @@ num=text;
   o[n]=o[n].join(' ');k++
  }
 	
-	result= o.reverse().join(" ");
+	result= o.reverse().join(" ")
 	
-	document.getElementById('nameResult').innerHTML=result;
-	document.getElementById('hiddenBlock').style.display='';
+	document.getElementById('summResult').innerHTML=result;
+                document.getElementById('hiddenBlock').style.visibility='visible';
+            
 }
 
 // Окончание для числительных
