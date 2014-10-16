@@ -24,7 +24,7 @@ function checkFieldName() {
 
 function currentDate() { // Вычисляет текущую дату для dates.html
     var date = new Date();
-    var values = [date.getDate(), date.getMonth() + 1];   // Выдает дату но ьез нулей впереди
+    var values = [date.getDate(), date.getMonth() + 1];   // Выдает дату но без нулей впереди
     for( var id in values ) {
         values[ id ] = values[ id ].toString().replace( /^([0-9])$/, '0$1' ); // Добавляет нули
         }
@@ -127,7 +127,14 @@ var resultDate;
 	//var resultEN='';
 	//resultEN=datePropisEN(r);
 	//resultEN=r
-	datePropisEN(text);
+	var kli='';
+	kli= datePropisEN(text);
+	document.getElementById('dateResultEN_GB').innerHTML=kli;
+	document.getElementById('hiddenBlock').style.visibility='visible';
+	//kli=text;
+	var t='';
+	
+	
  }
  else {
  	resultDate ='обратите внимание на диапазон даты';

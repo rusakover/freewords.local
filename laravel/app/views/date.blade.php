@@ -75,9 +75,15 @@
 						<p class="lead big" id="dateResult"></p>
 					</div>
 					<div>
-						<span class="help-block"> <i>Американский английский:</i>
+						<span class="help-block"> <i>Американский краткий формат</i>
 						</span>
 						<p class="lead" id="dateResultEN"></p>
+						
+					</div>
+					<div>
+						<span class="help-block"> <i>Английский краткий формат</i>
+						</span>
+						<p class="lead" id="dateResultEN_GB"></p>
 						
 					</div>
 				</div>

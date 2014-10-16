@@ -19,6 +19,7 @@ switch (text.substr(5,2)) {
 		case '11': 	MountstrEN = ' November ';break;
 		case '12': 	MountstrEN = ' December ';break;}
 resultEN=MountstrEN+ text.substr(8,2)+',' + text.substr(0,4);
+
 document.getElementById('dateResultEN').innerHTML=resultEN;
 document.getElementById('hiddenBlock').style.visibility='visible';
 
@@ -36,9 +37,10 @@ switch (text.substr(5,2)) {
 		case '11': 	MountstrEN = ' November ';break;
 		case '12': 	MountstrEN = ' December ';break;}
 resultEN=text.substr(8,2)+ MountstrEN+ + text.substr(0,4);
-document.getElementById('dateResultEN_GB').innerHTML=resultEN;
-document.getElementById('hiddenBlock').style.visibility='visible';
+//document.getElementById('dateResultEN_GB').innerHTML=resultEN;
+//document.getElementById('hiddenBlock').style.visibility='visible';
 
+return resultEN;
 
 //return r;
 }
