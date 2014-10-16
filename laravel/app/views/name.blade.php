@@ -22,27 +22,32 @@
 
 		<!-- Форма -->
 		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12 whitebox">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="whitebox">
 				<div class="form-group">
-					<h4 class="lettering">имя:</h4>
-				<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" data-toggle="tooltip" data-placement="top" title="Минимум 3 буквы" autofocus/ >
-				<span class="help-block">Введите имя, фамилию и отчество для транслитерации</span>
-			</div>
-			<div class="form-group">
-				<h4 class="lettering source">язык:</h4>
-				<div class="btn-group" data-toggle="buttons">
-					<label class="btn btn-primary active">
-						<input type="radio" name="options" id="englishCheck" checked>Английский</label>
-					<label class="btn btn-primary">
-						<input type="radio" name="options" id="deutscheCheck">Немецкий</label>
-					<label class="btn btn-primary">
-						<input type="radio" name="options" id="russianCheck">Русский</label>
+						<h4 class="lettering">имя:</h4>
+					<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" data-toggle="tooltip" data-placement="top" title="Минимум 3 буквы" autocomplete="off" />
+					<span class="help-block">Введите имя, фамилию и отчество для транслитерации</span>
 				</div>
-				<span class="help-block">Язык, на который необходима транслитерация</span>
 			</div>
-		</div>
+			<div class="whitebox">
+				<div class="form-group">
+					<h4 class="lettering source">язык:</h4>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+							<input type="radio" name="options" id="englishCheck" checked>Английский</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="deutscheCheck">Немецкий</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="russianCheck">Русский</label>
+					</div>
+					<span class="help-block">Язык, на который необходима транслитерация</span>
+				</div>
+			</div>
+			</div>
 		<!-- /.col-lg-6 -->
-		<div class="col-lg-4 col-md-4 col-sm-6 whitebox" id="hiddenBlock">
+		<div class="col-lg-4 col-md-4 col-sm-6" >
+		<div class="whitebox" id="hiddenBlock">
 
 			<!-- СКРЫТЫЙ РАЗДЕЛ, появляется при Результате -->
 			<div class="form-group" >
@@ -81,9 +86,13 @@
 			</div>
 			<!--  -->
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-6 infobox"><h4 class="lettering">Помощь</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi <a href="#">provident</a> eius aspernatur perferendis et, consequuntur quidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
-		<h5 class="lettering">Lorem ipsum dolor sit.</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi provident euidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
-		<h5 class="lettering">Lorem dolor sit</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendimi excepturi dolor quo alias necessitatibus.</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6">
+		<div class="infobox">
+			<h4 class="lettering">Помощь</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi статья про транслитерацию текста <a href="#">ссылка на статью</a> eius aspernatur perferendis et, consequuntur quidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
+			<h5 class="lettering">Lorem ipsum dolor sit.</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi provident euidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
+			<h5 class="lettering">Lorem dolor sit</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendimi excepturi dolor quo alias necessitatibus.</p>
+		</div>
 		</div>
 	</div>
 	<!--row-->

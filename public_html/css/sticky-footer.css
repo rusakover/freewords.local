@@ -24,3 +24,12 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+
+@media(max-width:768px) {
+  
+  #footer {
+    background-color: transparent;
+    color: white;
+}
+
+}

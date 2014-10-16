@@ -3,7 +3,8 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<title>Freewords.ru — стандарт транслитерации!</title>
 
@@ -24,15 +25,18 @@
 	</head>
 	<body>
 	<div class="container">
-			<a href="/" class="navbar-brend pull-left"> 
-			{{ HTML::image('img/logo.gif', 'freewords.ru — сервис транслитерации', ['class'=>'logo'] ); }}		
+	<a href="/">
+			<div class="navbar-brend pull-left logo"> 
+			
+			
 			<!-- код выше Добавляет <img src="mg/logo.gif" alt="freewords.ru — сервис транслитерации" class="logo"> -->
-			</a>
+			</div>
+		</a>
 			<!-- Типа для мобильных девайсов, меню складывается в кнопочку -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
-					<p>Меню</p>
+					<p>&#8595;</p>
 				</button>
 			</div>
 			<!-- Главное меню -->

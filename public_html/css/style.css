@@ -7,11 +7,13 @@ font-family: 'PT Serif', serif, Times New Roman; */
 
 /* #ffeebb бежевый
    rgba(138,237,182,1) синий
-   rgba(23,51,176,1) мятный цвет */
+   rgba(23,51,176,1) мятный цвет 
+   rgba(255, 234, 0, 0.76) желтый */
 
 body {
 font-family: 'PT Sans', sans-serif, Arial;
 background-color: rgba(226, 224, 211, 0.24);
+
 /*background-color: rgba(240, 241, 248, 0.24);*/
 }
 
@@ -34,21 +36,26 @@ margin: 20px 0 0 20px;
 
 
 
-a, a:hover {
+.nav a, .nav a:hover, a {
 font-family: 'PT Mono', sans-serif, Arial;
 	color:rgba(23,51,176,1);}
 
-h3 > a, h3 > a:hover{
+h3 > a, h3 > a:hover, .infobox > p > a{
   font-family: 'PT Sans', sans-serif, Arial;
+  color:rgba(23,51,176,1);
 }
 
 .nav > li > a:hover,
-.nav > li > a:focus {
+.nav > li > a:focus,
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   text-decoration: none;
   background-color: #ffeebb;
   color: black;
+  border-color: #ffeebb;
 
 }
+
+
 
 h2, .h2 {
 	/*font-size: 46px;*/
@@ -94,7 +101,7 @@ font-size: 14px;
   border:none;
 }
 
-/* --------------------------------------  Иконки -------------------------------------- */
+/* --------------------------------------  Иконки и ссылки -------------------------------------- */
 .fa {color: #ccc;}
 
 a .fa:hover {color: rgba(21,56,212,1);
@@ -104,18 +111,24 @@ a:focus {
   outline: none;
 }
 
-p >a, a span.link {
-    color:rgba(21,56,212,1);
-    border-bottom: 1px dotted rgba(21,56,212,1);
+a {cursor: pointer;}
+
+.infobox p > a, .infobox a span.link {
+    color:black;
+    border-bottom: 1px dotted rgba(21,56,212,.5);
+    background-color: rgba(255, 234, 0, 0.76); /* желтый */
 }
 
-p > a:hover, a span.link:hover {
+.infobox a:hover, .infobox a span.link:hover {
     color:rgba(21,56,212,1);
     text-decoration: none;
     border-bottom: 1px dotted white;
+    background-color: rgba(138,237,182,0);
 }
 
-a {cursor: pointer;}
+
+
+
 
 /* -------------------------------------- Навигация ------------------------------------ */
 
@@ -141,6 +154,23 @@ border-radius: 3px;
 background-color: #ffeebb;
 }
 
+
+.logo {
+  width:200px;
+  height: 80px; 
+  margin-top: 20px; 
+  padding-bottom: 20px; 
+/*  min-height: 80px;*/
+  background-image: url(../img/logo.png);
+  background-size: 200px;
+  background-position: top left;
+  background-repeat: no-repeat ;
+  border-color:transparent;
+}
+
+
+
+
 /* -------------------------------------- Заголовки ------------------------------------ */
 .result {
 color: rgba(21,212,139,1); 
@@ -162,7 +192,8 @@ font-family: 'PT Mono', sans-serif, Arial;
 
 .big {font-size: 1.8em;}
 
-.logo {max-width:200px; margin-top: 20px;}
+
+
 
 /* -------------------------------------- Кнопки ------------------------------------ */
 
@@ -170,16 +201,16 @@ font-family: 'PT Mono', sans-serif, Arial;
 
 .butn, .btn-default {
 font-family: 'PT Mono', Arial;
-   background-color: white;
+   background-color: transparent;
    border: solid 3px rgba(21,56,212,1);
    -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
            border-radius: 5px;
    padding: 8px;
    display: inline-block;
-   line-height: 15px;
+   line-height: 17px;
    color: rgba(23,51,176,1);
-   font-size: 16px;
+   font-size: 18px;
 
 }
 
@@ -289,28 +320,109 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
 
 .russian {background: url(../img/herb.png) no-repeat;}
 
+.infobox > h3, .whitebox > h3 {
+  margin-top: 0;
+}
+
 .whitebox {
 background: white;
 border-radius: 5px;
-padding: 30px 20px;
-border-bottom: 1px solid #DFDFDF;
+padding: 10px 20px;
+/*border-bottom: 1px solid #DFDFDF;*/
 border-left: 2px dashed rgba(217, 217, 217, 0.31);
 border-bottom: 2px dashed rgba(217, 217, 217, 0.31);
-
 /* border-top: 1px solid white; */
 /* box-shadow: 10px 10px 10px rgba(72, 58, 15, 0.1); */
 box-shadow: 7px 10px 15px rgba(19, 21, 58, 0), 0px 1px 3px rgba(36, 30, 12, 0.09), 1px 4px 5px rgba(36, 30, 12, 0.03);
+margin-right: -15px;
+margin-left: -15px;
+}
+
+.whitebox:hover {
+  z-index: 100;
+  box-shadow: 5px 5px 20px rgba(19, 21, 58, .05), 0px 1px 3px rgba(36, 30, 12, 0.09), 1px 4px 5px rgba(36, 30, 12, 0.03);
+  border-bottom: 2px dashed rgba(217, 217, 217, 0.61);
 }
 
 .infobox {
-  padding: 30px 20px;
+  padding: 10px 20px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
+.stabilo { padding-top: 30px;}
+
 @media(min-width:768px) {
-  .stabilo { min-height: 275px; }
+  .stabilo { min-height: 190px; }
 }
 
 @media(min-width:1200px) {
-  .stabilo { min-height: 220px; }
+  .stabilo { min-height: 175px; }
 }
+
+
+.panel {
+  background-color: transparent;
+  margin-top: 30px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
+}
+
+/* ----------------------------------------------     ДЛЯ МОБИЛЬНЫХ УТРОЙСТВ!!! ----------------------------------------------*/
+@media(max-width:768px) {
+  body { 
+    background-color:rgba(35, 43, 39, 1); 
+    color: white;
+  }
+  h1, h2, h3, h4, .nav a {
+    color: white;
+  }
+
+  p {
+    color: #A6A5A3;
+  }
+
+  .whitebox h4 {
+   color: rgba(23,51,176,1);
+  }
+
+  h4.result {
+   color: rgba(21,212,139,1);
+  }
+
+  .logo {
+    background-image: url(../img/logo_inverse.png);
+  }
+
+  .infobox p > a, .infobox a span.link {
+    color: rgba(255, 234, 0, 0.76);
+    border-bottom: 1px dotted rgba(255, 234, 0, 0.76);
+    background-color: rgba(255, 234, 0, 0.06); /* желтый */
+  }
+  .whitebox {
+    border-bottom: 1px dashed rgba(35, 43, 39, .4);
+    box-shadow:none;
+  }
+  .whitebox:hover {
+    box-shadow:none;
+    border-bottom: 1px dashed rgba(35, 43, 39, .4);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -24,7 +24,8 @@
 
 		<!-- Форма -->
 		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12 whitebox">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="whitebox">
 				<div class="form-group">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -38,6 +39,8 @@
 				<input type="date" class="form-control input-lg" id="dateField" autofocus/ value="<?php echo date('Y-m-d'); ?>">
 				<span class="help-block">Введите дату в формате ДД.ММ.ГГГГ</span>
 			</div>
+			</div>
+			<div class="whitebox">
 			<div class="form-group">
 				<h4 class="lettering source">язык:</h4>
 				<div class="btn-group" data-toggle="buttons">
@@ -50,9 +53,23 @@
 				</div>
 				<span class="help-block">Язык, на который необходима транслитерация</span>
 			</div>
+
+
+
+
+		</div>
+
+			<div class="panel">
+			<div class="form-actions">
+					<input id="send" type="submit" class="butn" value="Транслит&nbsp;&#8594;"></div>
+				
+				
+			</div>
+
 		</div>
 		<!-- /.col-lg-6 -->
-		<div class="col-lg-4 col-md-4 col-sm-6 whitebox" id="hiddenBlock">
+		<div class="col-lg-4 col-md-4 col-sm-6" >
+		<div class="whitebox" id="hiddenBlock">
 
 			<!-- СКРЫТЫЙ РАЗДЕЛ, появляется при Результате -->
 			<div class="form-group" >
@@ -92,17 +109,21 @@
 					Используйте первое написание при переводе, для соблюдения стандартов транслитерации в России
 				</span>
 			</div>
+		</div>
 			<!--  -->
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-6 infobox"><h4 class="lettering">Помощь</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi <a href="#">provident</a> eius aspernatur perferendis et, consequuntur quidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
+		<div class="col-lg-4 col-md-4 col-sm-6">
+		<div class="infobox">
+		<h4 class="lettering">Помощь</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi <a href="#">provident</a> eius aspernatur perferendis et, consequuntur quidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
 		<h5 class="lettering">Lorem ipsum dolor sit.</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendi provident euidem earum quod. Animi excepturi dolor quo alias necessitatibus.</p><hr>
 		<h5 class="lettering">Lorem dolor sit</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ad porro excepturi dignissimos, ea, eligendimi excepturi dolor quo alias necessitatibus.</p>
+		</div>
 		</div>
 	</div>
 	<!--row-->
 
 	<!-- Кнопка -->
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-lg-4 col-md-6">
 			<div class="form-actions">
 				<input id="send" type="submit" class="butn" value="Транслит"></div>
@@ -110,7 +131,9 @@
 			<hr/>
 
 		</div>
-	</div> <!-- /.row -->
+	</div>  /.row -->
+
+
 </div><!-- /.container -->
 
 @stop
