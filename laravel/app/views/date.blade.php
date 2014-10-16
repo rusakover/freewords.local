@@ -77,7 +77,7 @@
 					<div>
 						<span class="help-block"> <i>Американский английский:</i>
 						</span>
-						<p class="lead" id="">IVANOV PEOTER</p>
+						<p class="lead" id="dateResultEN"></p>
 						
 					</div>
 				</div>

@@ -123,12 +123,20 @@ var resultDate;
 		document.getElementById('hiddenBlock').style.visibility='visible';
 		}
 	var kk=1;
+	// Английская дата
+	//var resultEN='';
+	//resultEN=datePropisEN(r);
+	//resultEN=r
+	datePropisEN(text);
  }
  else {
  	resultDate ='обратите внимание на диапазон даты';
 	document.getElementById('dateResult').innerHTML=resultDate;
-		document.getElementById('hiddenBlock').style.visibility='visible';
+	document.getElementById('hiddenBlock').style.visibility='visible';
  }
+ 
+ 
+ 
 }
 
 function translateEN(){

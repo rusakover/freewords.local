@@ -25,7 +25,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="form-group">
 					<h4 class="lettering">иVя:</h4>
-				<input type="text" class="form-control input-lg" id="nameField" placeholder="Иванов Петр Сергеевич" data-toggle="tooltip" data-placement="top" title="Минимум 3 буквы" autofocus/ >
+				<input type="text" class="form-control input-lg" id="summField" placeholder="Иванов Петр Сергеевич" data-toggle="tooltip" data-placement="top" title="Минимум 3 буквы" autofocus/ >
 				<span class="help-block">Введите имя, фамилию и отчество для транслитерации</span>
 			</div>
 			<div class="form-group">
@@ -67,11 +67,11 @@
 					<div>
 						<span class="help-block"> <i>Европейский стандарт:</i>
 						</span>
-						<p class="lead" id="">IVANOV PEOTER</p>
+						<p class="lead" id="dateResultEN">IVANOV PEOTER</p>
 						<span class="help-block">
 							<i>Стандарт ISO3221-3:</i>
 						</span>
-						<p class="lead" id="nameResult">IVANOV PETR</p>
+						<p class="lead" id="dateResultENg"></p>
 					</div>
 				</div>
 				<!-- /зубчкики -->
