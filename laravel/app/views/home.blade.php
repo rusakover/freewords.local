@@ -37,7 +37,7 @@
 			<div class="col-sm-6 col-md-4 col-xs-11">
 				<div class="whitebox stabilo">
 				<h3 class="lettering">
-					<a href="translate/name">Сумма прописью&nbsp;&#8594;</a>
+					<a href="translate/summ">Сумма прописью&nbsp;&#8594;</a>
 				</h3>
 				<p>
 					<i>Транслитерация чисел на несколько языков и разных стандартов</i>
