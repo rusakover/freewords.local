@@ -15,8 +15,6 @@ background-color: rgba(226, 224, 211, 0.24);
 /*background-color: rgba(240, 241, 248, 0.24);*/
 }
 
-
-
 .navbar-header img {
 	width: 200px;
 	padding: 30px 0;
@@ -34,9 +32,15 @@ float: left;
 margin: 20px 0 0 20px;
 }
 
-a {
+
+
+a, a:hover {
 font-family: 'PT Mono', sans-serif, Arial;
 	color:rgba(23,51,176,1);}
+
+h3 > a, h3 > a:hover{
+  font-family: 'PT Sans', sans-serif, Arial;
+}
 
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -84,6 +88,10 @@ font-size: 14px;
 
 .page-header {
   border-bottom: none;
+}
+
+.thumbnail {
+  border:none;
 }
 
 /* --------------------------------------  Иконки -------------------------------------- */
@@ -157,34 +165,39 @@ font-family: 'PT Mono', sans-serif, Arial;
 .logo {max-width:200px; margin-top: 20px;}
 
 /* -------------------------------------- Кнопки ------------------------------------ */
-.butn {
+
+
+
+.butn, .btn-default {
 font-family: 'PT Mono', Arial;
    background-color: white;
    border: solid 3px rgba(21,56,212,1);
    -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
            border-radius: 5px;
-   padding: 12px;
+   padding: 8px;
    display: inline-block;
    line-height: 15px;
    color: rgba(23,51,176,1);
-   font-size: 18px;
+   font-size: 16px;
+
 }
 
-.butn:hover {
+.butn:hover, .btn-default:hover {
 	background-color: rgba(21,56,212,1);
    border: solid 3px rgba(21,56,212,1);
    color: white;
 }
 
-.butn:active {
+.butn:active, .btn-default:active {
 	background-color: rgba(138,237,182,1);
    border: solid 3px rgba(138,237,182,1);
    text-align: center;
    color: white;
+      box-shadow: none;
 }
 
-.butn:disabled {
+.butn:disabled, .btn-default:disabled {
   display: none;
   background-color: gray;
    border: solid 3px gray;
@@ -194,7 +207,7 @@ font-family: 'PT Mono', Arial;
 
 .btn-primary {
 color: #888;
-background-color: white;
+background-color: transparent;
 border-color: #DDDDDD;
 }
 
@@ -218,6 +231,14 @@ border-color: rgba(21,56,212,1);}
 
 input, .btn, .btn-success, .btn-lg { outline: none;}
 .input-lg {border-radius: 3px;}
+
+.btn-xs{
+  background-color: rgba(21,56,212,0);
+  border: solid 3px rgba(21,56,212,1);
+  line-height: 5px;
+  padding: 8px;
+  
+}
 
 /* -------------------------------------- Зубчики внизу ------------------------------------ */
 .zub {
@@ -267,14 +288,15 @@ input, .btn, .btn-success, .btn-lg { outline: none;}
 }
 
 .russian {background: url(../img/herb.png) no-repeat;}
-.british {background: url(../img/british.png) no-repeat;}
 
 .whitebox {
 background: white;
 border-radius: 5px;
 padding: 30px 20px;
 border-bottom: 1px solid #DFDFDF;
-/* border-right: 1px solid #bbb; */
+border-left: 2px dashed rgba(217, 217, 217, 0.31);
+border-bottom: 2px dashed rgba(217, 217, 217, 0.31);
+
 /* border-top: 1px solid white; */
 /* box-shadow: 10px 10px 10px rgba(72, 58, 15, 0.1); */
 box-shadow: 7px 10px 15px rgba(19, 21, 58, 0), 0px 1px 3px rgba(36, 30, 12, 0.09), 1px 4px 5px rgba(36, 30, 12, 0.03);
@@ -282,5 +304,13 @@ box-shadow: 7px 10px 15px rgba(19, 21, 58, 0), 0px 1px 3px rgba(36, 30, 12, 0.09
 
 .infobox {
   padding: 30px 20px;
+}
+
+@media(min-width:768px) {
+  .stabilo { min-height: 275px; }
+}
+
+@media(min-width:1200px) {
+  .stabilo { min-height: 220px; }
 }
 
