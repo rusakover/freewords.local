@@ -87,7 +87,7 @@
 				<div class="zub">
 					<!--____________________ Блок Зубчики -->
 					<div class="primary">
-						<span class="help-block"><i>Международный английский:</i>
+						<span class="help-block" id="span1"><i>Международный английский:</i>
 						</span>
 						<p class="lead big" id="dateResult"></p>
 					</div>
@@ -104,7 +104,7 @@
 						
 					</div>
 					<div>
-						<span class="help-block"> <i>Написание в юридических текстах</i>
+						<span class="help-block"> <i>Написание в юридических текстах (GB)</i>
 						</span>
 						<p class="lead" id="dateResultEN_GB_Yr"></p>
 						
