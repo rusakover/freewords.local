@@ -103,6 +103,12 @@
 						<p class="lead" id="dateResultEN_GB"></p>
 						
 					</div>
+					<div>
+						<span class="help-block"> <i>Написание в юридических текстах</i>
+						</span>
+						<p class="lead" id="dateResultEN_GB_Yr"></p>
+						
+					</div>
 				</div>
 				<!-- /зубчкики -->
 				<span class="help-block">
